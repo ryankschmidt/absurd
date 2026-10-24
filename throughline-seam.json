@@ -1,0 +1,79 @@
+{
+  "schema": "throughline.seam-manifest.v1",
+  "upstream": {
+    "remote_url": "https://github.com/earendil-works/absurd",
+    "sha": "201a1ef4b5a05f98219e4c784df93ad0320a7fde"
+  },
+  "fork": {
+    "sha": "201a1ef4b5a05f98219e4c784df93ad0320a7fde"
+  },
+  "merge_base": "201a1ef4b5a05f98219e4c784df93ad0320a7fde",
+  "counts": {
+    "upstream_edit": 0,
+    "upstream_removed": 0,
+    "fork_added": 0,
+    "fork_namespace": 0
+  },
+  "entries": [],
+  "upstream_changes": [],
+  "conflict_rules": {
+    "default": "review",
+    "capability_paths": "retain-fork-and-run-capability-tests"
+  },
+  "migration": {
+    "ship_seams": {
+      "source": "",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rules": [],
+      "resolutions": []
+    },
+    "projector": {
+      "source": "",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capabilities": []
+  },
+  "repository": {
+    "product": "absurd",
+    "origin": "https://github.com/ryankschmidt/absurd.git",
+    "upstream": "https://github.com/earendil-works/absurd",
+    "upstream_pin": {
+      "kind": "tag",
+      "ref": "0.5.1",
+      "sha": "201a1ef4b5a05f98219e4c784df93ad0320a7fde"
+    },
+    "design_start_commit": "201a1ef4b5a05f98219e4c784df93ad0320a7fde",
+    "namespace_patterns": [
+      "^throughline/",
+      "^sdks/typescript/src/throughline/"
+    ],
+    "approval_dir": "docs/throughline/tax-approvals/",
+    "sanctioned_non_namespace": [
+      "throughline-seam.json",
+      "docs/throughline/"
+    ]
+  },
+  "external_customizations": [
+    {
+      "path": "/Users/Admin/core-root/vault/01_Projects/workbench/tools/absurd-sandbox/src/habitat-up.ts",
+      "what": "Habitat supervisor",
+      "owner_component": "absurd-sandbox"
+    },
+    {
+      "path": "/Users/Admin/core-root/vault/01_Projects/workbench/tools/absurd-sandbox/com.ryan.absurd-habitat.plist",
+      "what": "Habitat LaunchAgent",
+      "owner_component": "absurd-sandbox"
+    },
+    {
+      "path": "/Users/Admin/throughline/packages/absurd-runtime",
+      "what": "ThroughLine Absurd client",
+      "owner_component": "ThroughLine fork"
+    },
+    {
+      "path": "/home/twr/.config/systemd/user/absurd-pg.service",
+      "what": "Tower queue unit",
+      "owner_component": "absurd-sandbox",
+      "host": "twr"
+    }
+  ]
+}
