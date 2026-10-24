@@ -5,16 +5,85 @@
     "sha": "201a1ef4b5a05f98219e4c784df93ad0320a7fde"
   },
   "fork": {
-    "sha": "201a1ef4b5a05f98219e4c784df93ad0320a7fde"
+    "sha": "fa663730b6f490b060c7600411169109d74ceae1"
   },
   "merge_base": "201a1ef4b5a05f98219e4c784df93ad0320a7fde",
   "counts": {
     "upstream_edit": 0,
     "upstream_removed": 0,
     "fork_added": 0,
-    "fork_namespace": 0
+    "fork_namespace": 4
   },
-  "entries": [],
+  "entries": [
+    {
+      "path": "docs/throughline/README.json",
+      "class": "fork-namespace",
+      "reason": "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    },
+    {
+      "path": "docs/throughline/tax-approvals/README.json",
+      "class": "fork-namespace",
+      "reason": "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    },
+    {
+      "path": "throughline-seam.json",
+      "class": "fork-namespace",
+      "reason": "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    },
+    {
+      "path": "throughline/hooks/pre-commit",
+      "class": "fork-namespace",
+      "reason": "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "fa663730b6f490b060c7600411169109d74ceae1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    }
+  ],
   "upstream_changes": [],
   "conflict_rules": {
     "default": "review",
@@ -42,7 +111,7 @@
       "ref": "0.5.1",
       "sha": "201a1ef4b5a05f98219e4c784df93ad0320a7fde"
     },
-    "design_start_commit": "201a1ef4b5a05f98219e4c784df93ad0320a7fde",
+    "design_start_commit": "fa663730b6f490b060c7600411169109d74ceae1",
     "namespace_patterns": [
       "^throughline/",
       "^sdks/typescript/src/throughline/"
@@ -75,5 +144,22 @@
       "owner_component": "absurd-sandbox",
       "host": "twr"
     }
-  ]
+  ],
+  "tax_policy": {
+    "schema": "throughline.upstream-tax-policy.v1",
+    "baseline_count": 0,
+    "target_count": 0,
+    "baseline_fork": "fa663730b6f490b060c7600411169109d74ceae1",
+    "pinned_upstream": "201a1ef4b5a05f98219e4c784df93ad0320a7fde",
+    "approved_growth_files": [],
+    "approved_swap_files": []
+  },
+  "admitted": {
+    "upstream_edit_count": 0,
+    "fork_added_count": 0,
+    "uncovered_fork_path_count": 4,
+    "fork_sha": "fa663730b6f490b060c7600411169109d74ceae1",
+    "admitted_at": "2026-10-24T12:44:57.801Z",
+    "admitted_by": "01a16de5-cc29-7790-80e0-22169ed3e2af"
+  }
 }
